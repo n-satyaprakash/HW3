@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NANDIGAM</title>
+    <link rel="stylesheet" href="../HW2/css/Indexstyles.css">
+</head>
+<body class="first-color">
+    <header class="foreground-color"> 
+        <h1>Welcome to Nandigam's Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="link-color">Home</a></li>
+                <li><a href="pages/About.html" class="link-color">About</a></li> 
+                <li><a href="pages/Blog.html" class="link-color">Blog</a></li>
+                <li><a href="pages/Dictionary.html" class="link-color">Dictionary</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>About ME</h2>
+        <p>I thrive on the excitement of gaming, diving into immersive worlds and conquering challenges. <br> Movies and web series are my escape, offering diverse narratives and thought-provoking themes.<br> Late nights hold a special allure for me, with their sense of adventure and freedom.<br> Each interest shapes my dynamic personality, blending virtual thrills with real-world exploration and continuous self-improvement</p>
+
+        <img id="img1" src="pages/gaming.png" alt="gaming">
+        <img src="pages/night.jpg" alt="night">
+        <img src="pages/movie.png" alt="movie">
+    </main>
+
+    <footer class="third-color foreground-color"> 
+        <p>&copy; Nandigam 2024 My Website. All Rights Reserved.</p>
+    </footer>
+
+    <button id="back-to-top-btn">Back to Top</button>
+    <script>
+        const backToTopBtn = document.getElementById('back-to-top-btn');
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) { 
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
